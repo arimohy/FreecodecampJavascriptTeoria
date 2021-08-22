@@ -1,0 +1,26 @@
+var count = 0;
+function r(){
+  if(count<=0){
+    return ' Hold';
+  }
+  return ' Bet'
+}
+function cc(card) {
+  // Only change code below this line
+  if(card>=2 && card<=6){
+    count+=1;
+    return (count+r())
+  }
+  else if(card>=7  && card <=9){
+    return (count+r())
+  }
+  else{
+    count-=1;
+    return (count+r())
+  }
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+console.log(cc(2)); console.log(cc('J')); console.log(cc(9)); console.log(cc(2)); console.log(cc(7));
