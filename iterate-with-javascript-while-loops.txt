@@ -1,0 +1,10 @@
+// Setup
+var myArray = [];
+
+// Only change code below this line
+var c=5
+while(c>=0){
+  myArray.push(c);
+  c--;
+}
+console.log(myArray)

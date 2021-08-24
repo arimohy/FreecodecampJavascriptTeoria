@@ -1,0 +1,14 @@
+function rangeOfNumbers(startNum, endNum) {
+  console.log(startNum,endNum);
+  console.log(startNum===endNum);
+  if(endNum===startNum){
+    return [endNum];
+  }
+  else{
+    var array=rangeOfNumbers(startNum+1,endNum);
+    array.unshift(startNum)
+    return array
+    
+  }
+};
+console.log(rangeOfNumbers(2,5))
