@@ -1,0 +1,3 @@
+let yourArray; // Change this line
+yourArray=['yhomira',25,true,false,"alexandra",34]
+console.log(yourArray)
