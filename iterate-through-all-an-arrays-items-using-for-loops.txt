@@ -1,0 +1,21 @@
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // Only change code below this line
+for (let i=0;i<arr.length;i++){
+  let bool=true;
+  for (let y=0;y<3;y++)
+  {
+    if(arr[i][y]===elem){
+      bool=false;
+    }
+  }
+  if(bool){
+    newArr.push(arr[i])
+  }
+}
+
+  // Only change code above this line
+  return newArr;
+}
+
+console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18));
