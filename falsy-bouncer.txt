@@ -1,0 +1,7 @@
+function bouncer(arr) {
+  let r= arr.filter(Boolean)
+  return r
+}
+
+let u=bouncer([false, null, 0, NaN, undefined, ""]);
+console.log(u)

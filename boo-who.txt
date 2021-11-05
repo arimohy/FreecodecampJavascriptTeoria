@@ -1,0 +1,7 @@
+function booWho(bool) {
+  let tipo=typeof bool
+  return tipo==typeof Boolean();
+}
+
+let r=booWho(true);
+console.log(r)
