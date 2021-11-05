@@ -1,0 +1,9 @@
+function getIndexToIns(arr, num) {
+  let arro=arr.sort(function(a, b){return a - b});
+  let n=arr.filter(e=>e<num)
+  //console.log(n.length)
+  return n.length
+}
+
+let r=getIndexToIns([], 1);
+console.log(r)
