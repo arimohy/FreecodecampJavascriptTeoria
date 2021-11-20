@@ -1,0 +1,21 @@
+// The global variable
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+// Change code below this line
+function add (bookLista,bookName) {
+  const arr1=[...bookLista,bookName]
+  return arr1
+  // Change code above this line
+}
+
+// Change code below this line
+function remove (bookLista,bookName) {
+  const arr=bookLista.filter(e=>e!==bookName)
+  return arr
+}
+
+const newBookList = add(bookList, 'A Brief History of Time');
+const newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
+const newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+
+console.log(bookList);
