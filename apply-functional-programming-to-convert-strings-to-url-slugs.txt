@@ -1,0 +1,9 @@
+// Only change code below this line
+function urlSlug(title) {
+  let min=title.toLowerCase()
+  return min.trim().split(/\s+/).join("-")
+
+}
+// Only change code above this line
+let r=urlSlug("Winter Is Coming")
+console.log(r)
