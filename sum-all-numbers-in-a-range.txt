@@ -1,0 +1,17 @@
+function sumAll(arr) {
+  let arr2=arr.sort((a,b)=>a-b)
+  let suma2=0
+  let c=arr2[0]+1
+  while(c<arr2[1]){
+    suma2+=c
+    //console.log(suma2)
+    c++
+  }
+  
+  return suma(arr)+suma2;
+}
+function suma(arr){
+  return arr.reduce((cont,e)=>cont+e,0)
+}
+
+sumAll([1, 4]);

@@ -1,0 +1,10 @@
+function diffArray(arr1, arr2) {
+  const newArr = diferencia(arr1,arr2)
+  const newArr2= diferencia(arr2,arr1)
+  return newArr.concat(newArr2);
+}
+const diferencia=(a,b)=>{
+  return a.filter(e=>!b.includes(e))
+}
+let r=diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+console.log(r)
