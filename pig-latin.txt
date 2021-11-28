@@ -1,0 +1,10 @@
+function translatePigLatin(str) {
+   if (str.match(/^[aeiou]/)) return str + "way";
+
+  const consonantCluster = str.match(/^[^aeiou]+/)[0];
+  console.log(consonantCluster)
+  return str.substring(consonantCluster.length) + consonantCluster + "ay";
+}
+
+let r=translatePigLatin("consonant");
+console.log(r)
