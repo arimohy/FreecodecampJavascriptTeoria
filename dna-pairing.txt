@@ -1,0 +1,11 @@
+function pairElement(str) {
+  let array=[]
+  for(let i=0;i<str.length;i++){
+    let par=str.charAt(i)==='A'?'T':str.charAt(i)==='T'?'A':str.charAt(i)==='C'?'G':'C'
+    array.push([str.charAt(i),par])
+  }
+  return array
+}
+
+let r=pairElement("GCG");
+console.log(r)
