@@ -1,0 +1,9 @@
+function convertHTML(str) {
+  let s=str
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')
+  .replace(/>/g,'&gt;').replace(/"/g,'&quot;')
+  .replace(/'/g,'&apos;');
+}
+
+let r=convertHTML("Hamburgers < Pizza < Tacos");
+console.log(r)
