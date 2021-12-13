@@ -1,0 +1,19 @@
+function sumFibs(num) {
+  let suma =0
+  let nro1=0
+  let nro2=1
+  let aux=0
+  while(nro2<=num){
+    if(!(nro2%2==0)){
+      suma=suma+nro2
+    }
+    aux=nro2
+    nro2=nro1+nro2
+    nro1=aux
+    
+  }
+  return suma;
+}
+
+let r=sumFibs(4);
+console.log(r)
