@@ -1,0 +1,20 @@
+function sumPrimes(num) {
+  let suma=0
+  for(let i=2;i<=num;i++){
+    if(esprimo(i)){
+      suma=suma+i
+    }
+  }
+  return suma;
+}
+function esprimo(n){
+  for (var i = 2; i < n; i++) {
+        if (n%i==0){
+            return false;
+        }
+    };
+    return true;
+
+}
+let r=sumPrimes(10);
+console.log(r)
