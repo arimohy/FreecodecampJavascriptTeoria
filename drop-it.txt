@@ -1,0 +1,11 @@
+function dropElements(arr, func) {
+  let ini=arr.findIndex(func)
+  console.log(ini);
+  if(ini==-1){
+    return []
+  }
+  else{return arr.splice(ini);}
+}
+
+let r=dropElements([1, 2, 3, 4], function(n) {return n >= 3;});
+console.log(r)
